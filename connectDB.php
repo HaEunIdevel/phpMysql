@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pw = "root";
-$dbConnect = new mysqli($host, $user, $pw);
+$dbConnect = new mysqli($host, $user, $pw); // mysql 접속하기
 $dbConnect->set_charset("utf8");
 
 if(mysqli_connect_errno()){
