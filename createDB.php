@@ -29,7 +29,7 @@ if (mysqli_connect_errno()) {
     
     
     // 생성한 DB에 접속하기. 네번째 인자로 데이터 베이스명 입력
-    $dbConnect = new mysqli($host, $user, $pw,$dataBaseConnect); // mysql 접속하기
+    $dbConnect = new mysqli($host, $user, $pw,$dataBaseConnect); // 생성된  DB 접속하기 1번만 진행할것.
     $dbConnect->set_charset("utf8");
     if(mysqli_connect_errno()){
         echo "데이터 메이스 $dataBaseConnect 에 접속 실패";
