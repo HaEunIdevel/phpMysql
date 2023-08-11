@@ -2,8 +2,10 @@
 $host = "localhost";
 $user = "root";
 $pw = "root";
-$dbConnect = new mysqli($host, $user, $pw); // mysql 접속하기
-$dbConnect->set_charset("utf8");
+    $dataBaseConnect = "phpSQL";
+    
+    $dabaseConnect = new mysqli($host, $user, $pw,$dataBaseConnect); // mysql 접속하기
+    $dabaseConnect->set_charset("utf8");
 
 if(mysqli_connect_errno()){
     echo "DB접속 실패";
@@ -11,4 +13,3 @@ if(mysqli_connect_errno()){
 }else{
     echo "접속성공";
 }
-?>
