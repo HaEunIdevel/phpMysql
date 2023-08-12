@@ -1,5 +1,5 @@
 <?php
-//require require_once  __DIR__ . "/connectDB.php" ;//  접속프로그램
+//require_once  __DIR__ . "/connectDB.php" ;//  접속프로그램
     include $_SERVER['DOCUMENT_ROOT'] . '/connectDB.php';
     $query = "CREATE TABLE myMember(
 MEMBER_ID INT unsigned auto_increment comment '고객번호',
